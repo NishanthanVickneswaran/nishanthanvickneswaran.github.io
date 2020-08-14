@@ -9,7 +9,7 @@
 var products = [
   {
     name: 'High Flow Aluminum Charge Pipe Kit ',
-    image: 'nishanthanvickneswaran.github.io/images/intercooler.jpg',
+    image: '/images/intercooler.jpg',
     category: 'engine',
     description: 'Increase intake air flow with aluminum charge pipes for your OEM intercooler',
     price: 599.99,
