@@ -9,7 +9,7 @@
 var products = [
   {
     name: 'High Flow Aluminum Charge Pipe Kit ',
-    image:'images/intercooler.JPG',
+    image:"images/intercooler.JPG",
     category: 'engine',
     description: 'Increase intake air flow with aluminum charge pipes for your OEM intercooler',
     price: 599.99,
@@ -18,7 +18,7 @@ var products = [
   },
   {
     name: 'Ignition Service Kit',
-    image: 'images/coils.jpg',
+    image: 'images/coils.JPG',
     category: 'engine',
     description:
       'Includes four OE red coil packs, OEM spark plugs and black coil pack wiring conduit ',
@@ -28,7 +28,7 @@ var products = [
   },
   {
     name: 'Premium Oil Service Kit',
-    image: 'images/oil.jpg',
+    image: 'images/oil.JPG',
     category: 'engine',
     description: 'Includes HENGST oil filter and Liqui-Moly High Tech 5w-40 oil',
     price: 69.99,
@@ -37,7 +37,7 @@ var products = [
   },
   {
     name: 'Atmospheric Blow Off Valve Spacer – Polished ',
-    image: 'images/blowoff.jpg',
+    image: 'images/blowoff.JPG',
     category: 'engine',
     description: 'Direct bolt on without worry of a check-engine light',
     price: 149.99,
@@ -46,7 +46,7 @@ var products = [
   },
   {
     name: 'APR Carbon Fiber Cold Air Intake System ',
-    image: 'images/intake.jpg',
+    image: 'images/intake.JPG',
     category: 'engine',
     description: 'Great performance and looks for your B8',
     price: 399.99,
@@ -55,7 +55,7 @@ var products = [
   },
   {
     name: 'Heavy Duty Shocks & Struts Kit ',
-    image: 'images/shocks.jpg',
+    image: 'images/shocks.JPG',
     category: 'suspension',
     description: 'Performance shocks for OE springs',
     price: 659.99,
@@ -64,7 +64,7 @@ var products = [
   },
   {
     name: 'Super Sport Springs',
-    image: 'images/hrsprings.jpg',
+    image: 'images/hrsprings.JPG',
     category: 'suspension',
     description: 'Aggressive looks and ultimate handling. Average lowering of 2.0"F 2.0"R',
     price: 299.99,
@@ -73,7 +73,7 @@ var products = [
   },
   {
     name: 'Airtech Basic Air Suspension System',
-    image: 'images/airsuspension.jpg',
+    image: 'images/airsuspension.JGP',
     category: 'suspension',
     description: 'Complete bare-bones direct bolt-in air suspension system',
     price: 2999.99,
@@ -82,7 +82,7 @@ var products = [
   },
   {
     name: 'Complete Front Control Arm Kit ',
-    image: 'images/control arm.jpg',
+    image: 'images/control arm.JGP',
     category: 'suspension',
     description: 'Includes all front control arms, ball joints, and hardware',
     price: 699.99,
@@ -91,7 +91,7 @@ var products = [
   },
   {
     name: 'Performance Front & Rear Sway Bar Kit ',
-    image: 'images/swaybar.jpg',
+    image: 'images/swaybar.JPG',
     category: 'suspension',
     description:
       'Includes front adjustable (30mm) and rear (24mm) non-adjustable sway bars with required bushings',
