@@ -1,0 +1,97 @@
+<!--Student Name: Nishanthan Vickneswaran-->
+<!--Student Number: 141770198-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet" />
+    <script src="script.js"></script>
+    <title>EURO SUPER MODS</title>
+  </head>
+
+ 
+  <body>
+    <nav>
+        <h1>EURO SUPER MODS</h1>
+        <h2>WHERE PERFORMANCE MATTERS...</h2>
+      </nav>
+      <!--nav bar-->
+      <aside>
+        <ul>
+          <li id="menu_1"><a href="index.html">Home</a></li>
+          <li id="menu_5"><a href="#">Contact Us</a></li>
+        </ul>
+      </aside>
+
+      <div id="forms">
+        <form id="form" action=" https://httpbin.org/post" method="POST" onsubmit = "return validationcheck()" ></form>
+      </div>
+
+
+      <div class="Form">
+        <h2> Please contact us by filling out the following fields</h2>
+        <br><br>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        <br><br>
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="name" id="name" required>
+        <br><br>
+        <label for="city">City</label>
+        <input list="cities" name="city" id="city">
+        
+        <datalist id="cities">
+          <option value="Toronto">
+          <option value="Scarborough">
+          <option value="Markham">
+          <option value="Mississauga">
+          <option value="Ajax">
+        </datalist>
+        <br><br>
+        <label for="postal"><b>Postal Code</b></label>
+        <input type="text" placeholder="Enter Postal Code" name="postal" id="postal" required>
+        <br>
+        <label for="question">Question: </label>
+        <input type="radio" id="question" name="question" value="question"><br>
+        <label for="Comment">Comment:</label>
+        <input type="radio" id="Comment" name="Comment" value="Comment"><br>
+        <label for="other">Order Problem:</label>
+        <input type="radio" id="order_problem" name="order_problem" value="order_problem">
+        <br>
+        <textarea id="textinput" name="textinput" rows="10" cols="50">Enter comments here...</textarea>
+
+        <p><button type="submit" class="registerbtn">Submit</button></p>
+      </div>
+    
+    </form>
+
+
+      <footer>
+
+        <form action = "https://formspree.io/mqkyjnop" method = "POST" onsubmit = "return valid()" >
+            <label for="Email">Email:</label>
+            <input type="text" id="email" name = "_replyto">
+            <input type="submit" value ="Subscribe">
+        </form>
+
+          <p class="copyright">&copy; 2020 Nishanthan Vickneswaran</p>
+
+          <div class="socialMedia">
+            <a href="http://www.facebook.com" target="_blank">
+              <img src="./images/facebook.png" alt="facebook" class="socialIcon" />
+            </a>
+            <a href="http://www.instagram.com" target="_blank">
+              <img src="./images/insta.jpg" alt="instagram" class="socialIcon" />
+            </a>
+        </div>
+
+       </footer>
+     </div>
+   </body>
+</html>
