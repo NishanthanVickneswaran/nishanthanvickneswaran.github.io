@@ -221,7 +221,7 @@ footer label{
 
 .Form button{
   margin: 0 auto;
-
+  padding: 10px;
   color: #f4f6ff;
   background-color: #555555;
   text-align: center;
@@ -240,3 +240,8 @@ footer label{
   text-align: center;
   margin: 10px;
 }
+
+.orderProblem textarea{
+  display: block;
+  margin: auto;
+}  
