@@ -9,7 +9,7 @@
 var products = [
   {
     name: 'High Flow Aluminum Charge Pipe Kit ',
-    image:'./images/intercooler.JPG',
+    image:"images/intercooler.JPG",
     category: 'engine',
     description: 'Increase intake air flow with aluminum charge pipes for your OEM intercooler',
     price: 599.99,
@@ -144,6 +144,7 @@ function createCard(i) {
   card.appendChild(button);
 }
 
+//validates the email entry
 function emailValidation() {
 
   var valid = false;
@@ -160,6 +161,7 @@ function emailValidation() {
   return valid;
   }
 
+  //validates the city entry
   function cityValidation(){
     var valid = false;
     var city= document.getElementById("city").value;
@@ -173,7 +175,7 @@ function emailValidation() {
     return valid;
   
   }
-
+//validates the postalcode entry
   function postalValidation(){
     var valid = false;
     var postal= document.getElementById("postal").value;
@@ -188,7 +190,7 @@ function emailValidation() {
     return valid;
     
   }
-  
+  //validates the name entry
   function nameValidation(){
     var valid = false;
     var name= document.getElementById("name").value;
@@ -201,15 +203,6 @@ function emailValidation() {
     }
     return valid;
     
-  }
-
-  function orderProblem(){
-    var valid=false;
-    var order=document.getElementById("orderProblem");
-    if(order){
-      <textarea id="textinput" name="textinput" rows="10" cols="50">Enter comments here...</textarea>;
-    }
-
   }
 
 window.onload = function() {
