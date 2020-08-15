@@ -9,7 +9,7 @@
 var products = [
   {
     name: 'High Flow Aluminum Charge Pipe Kit ',
-    image:"url(images/intercooler.JPG)",
+    image:"images/intercooler.JPG",
     category: 'engine',
     description: 'Increase intake air flow with aluminum charge pipes for your OEM intercooler',
     price: 599.99,
@@ -147,17 +147,70 @@ function createCard(i) {
 function emailValidation() {
 
   var valid = false;
-  var email= document.getElementById("Email").value;
+  var email= document.getElementById("email").value;
   
   const validEmail = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   
   if (validEmail.test(email)) {
     valid = true;
   }
+  else{
+    alert("You have entered an invalid email address!");
+  }
   return valid;
   }
 
+  function cityValidation(){
+    var valid = false;
+    var city= document.getElementById("city").value;
+    
+    if(city!= 0){
+      valid=true;
+    }
+    else{
+      alert("You have not chosen a city!");
+    }
+    return valid;
   
+  }
+
+  function postalValidation(){
+    var valid = false;
+    var postal= document.getElementById("postal").value;
+    const validPostal= /[a-zA-Z][0-9][a-zA-Z](-| |)[0-9][a-zA-Z][0-9]/;
+    
+    if(validPostal.test(postal)){
+      valid=true;
+    }
+    else{
+      alert("You have entered an invalid postal code!");
+    }
+    return valid;
+    
+  }
+  
+  function nameValidation(){
+    var valid = false;
+    var name= document.getElementById("name").value;
+      
+    if(name!=0){
+      valid=true;
+    }
+    else{
+     
+    }
+    return valid;
+    
+  }
+
+  function orderProblem(){
+    var valid=false;
+    var order=document.getElementById("orderProblem");
+    if(order){
+      <textarea id="textinput" name="textinput" rows="10" cols="50">Enter comments here...</textarea>;
+    }
+
+  }
 
 window.onload = function() {
   var home = document.querySelector('#home');
