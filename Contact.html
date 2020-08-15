@@ -38,13 +38,13 @@
         <h2> Please contact us by filling out the following fields</h2>
         <br><br>
         <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        <input type="email" placeholder="Enter Email" name="email" id="email"   required> 
         <br><br>
         <label for="name"><b>Name</b></label>
         <input type="text" placeholder="Enter Name" name="name" id="name" required>
         <br><br>
         <label for="city">City</label>
-        <input list="cities" name="city" id="city">
+        <input type='text'list="cities" name="city" id="city">
         
         <datalist id="cities">
           <option value="Toronto">
@@ -58,15 +58,17 @@
         <input type="text" placeholder="Enter Postal Code" name="postal" id="postal" required>
         <br>
         <label for="question">Question: </label>
-        <input type="radio" id="question" name="question" value="question"><br>
+        <input type="radio" id="question" name="choice" ><br>
+
         <label for="Comment">Comment:</label>
-        <input type="radio" id="Comment" name="Comment" value="Comment"><br>
+        <input type="radio" id="Comment" name="choice"><br>
+
         <label for="other">Order Problem:</label>
-        <input type="radio" id="order_problem" name="order_problem" value="order_problem">
+        <input type="radio" id="orderProblem" name="choice" onclick="orderProblem()">
         <br>
         <textarea id="textinput" name="textinput" rows="10" cols="50">Enter comments here...</textarea>
 
-        <p><button type="submit" class="registerbtn">Submit</button></p>
+        <p><button type="submit" class="submit" onclick="emailValidation(), cityValidation(), postalValidation(), nameValidation()" > Submit</button></p>
       </div>
     
     </form>
@@ -74,7 +76,7 @@
 
       <footer>
 
-        <form action = "https://formspree.io/mqkyjnop" method = "POST" onsubmit = "return valid()" >
+        <form action = "https://formspree.io/mqkyjnop" method = "POST" onsubmit = "emailValidation()" >
             <label for="Email">Email:</label>
             <input type="text" id="email" name = "_replyto">
             <input type="submit" value ="Subscribe">
